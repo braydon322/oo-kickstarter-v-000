@@ -2,17 +2,17 @@ require 'pry'
 
 class Backer
 
-  attr_accessor :backed_projects, :backers
+  attr_accessor :backed_projects
   attr_reader :name
 
   def initialize(name)
     @backed_projects = []
-    @backers = []
+    
     @name = name
   end
 
   def back_project(project)
     backed_projects << project
-    backers << self
+    project.backers << self
   end
 end
