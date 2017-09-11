@@ -13,4 +13,7 @@ class Backer
     backers << self
   end
 
+  def backers
+  end
+
 end
