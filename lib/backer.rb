@@ -1,3 +1,5 @@
+require 'pry'
+
 class Backer
 
   attr_accessor :name, :backed_projects, :backers
@@ -8,6 +10,7 @@ class Backer
   end
 
   def back_project(project)
+    
     backed_projects << project
   end
 
