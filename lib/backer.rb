@@ -11,7 +11,5 @@ class Backer
     backed_projects << project
   end
 
-  def backers
-  end
 
 end
