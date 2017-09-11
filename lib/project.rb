@@ -2,7 +2,7 @@ require 'pry'
 
 class Project
 
-  attr_accessor :title, :backers, :backed_projects
+  attr_accessor :title, :backers
 
   def initialize(title)
     @title = title
@@ -14,6 +14,10 @@ class Project
     @backers << name
     @backed_projects << self
     binding.pry
+  end
+
+  def backed_projects
+    @backed_projects
   end
 
 
